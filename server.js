@@ -36,7 +36,6 @@ app.use(
   )
 )
 app.use(methodOverride('_method'))
-app.use(express.urlencoded({ extended: false }))
 
 // mounted routers
 app.use('/', indexRouter)
