@@ -30,6 +30,7 @@ app.use(
     path.join(path.dirname(fileURLToPath(import.meta.url)), 'public')
   )
 )
+app.use(express.urlencoded({ extended: false}))
 
 // mounted routers
 app.use('/', indexRouter)
